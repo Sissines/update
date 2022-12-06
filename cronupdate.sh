@@ -8,4 +8,4 @@ echo "#! /bin/bash" >> /root/script/update.sh
 echo "apt update -y" >> /root/script/update.sh
 echo "apt-get upgrade -o Dir::Etc::SourceList=/etc/apt/security.sources.list -y" >> /root/script/update.sh
 chmod +x /root/script/update.sh
-echo "@monthly /root/script/update.sh" >> /etc/crontab
+echo "0 0 15 * * root /root/script/update.sh" >> /etc/crontab
