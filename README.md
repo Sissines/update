@@ -1,4 +1,4 @@
 # update
 security updates linux
 run as root not sudo
-chmod +x install.sh
+chmod +x setup.sh
